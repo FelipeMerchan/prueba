@@ -1,0 +1,35 @@
+.hero {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @media (--small) {
+    height: 30vh;
+  }
+  & h1 {
+    margin: 0;
+    position: relative;
+    color: white;
+    z-index: 2;
+    line-height: 2em;
+    text-align: center;
+    font-size: 1em;
+    @media (--extra-small) {
+      font-size: .8em;
+    }
+  }
+  & img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    @media (--medium) {
+      width: 150%;
+    }
+  }
+}
